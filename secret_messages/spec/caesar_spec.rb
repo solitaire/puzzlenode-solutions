@@ -37,7 +37,11 @@ describe Cipher::Caesar do
     end
     
     it "should encrypt a lower-case word with the given key" do
-      Cipher::Caesar.encrypt("abcdef",22).should == "WXYZAB"
+      Cipher::Caesar.encrypt("abcdef",22).should == "wxyzab"
+    end
+    
+    it "should encrypt a word with no-ascii characters" do
+      Cipher::Caesar.encrypt("ab**cde!f@ ",22).should == "wx**yza!b@ "
     end
   end
   
