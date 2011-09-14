@@ -1,3 +1,3 @@
 require 'rspec'
-require './lib/caesar.rb'
-require './lib/vigenere.rb'
+require_relative '../lib/caesar.rb'
+require_relative '../lib/vigenere.rb'
