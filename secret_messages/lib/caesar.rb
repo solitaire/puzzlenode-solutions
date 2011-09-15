@@ -1,4 +1,4 @@
-require 'utils.rb'
+require "#{File.dirname(__FILE__)}/utils"
 module Cipher
   class Caesar
     class << self
