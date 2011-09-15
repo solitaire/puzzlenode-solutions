@@ -1,4 +1,4 @@
-require "#{File.dirname(__FILE__)}/utils"
+require_relative 'utils'
 module Cipher
   class Vigenere
     class << self

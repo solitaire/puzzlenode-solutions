@@ -1,7 +1,6 @@
 require 'set'
-require "#{File.dirname(__FILE__)}/caesar"
-require "#{File.dirname(__FILE__)}/vigenere"
-
+require_relative 'caesar'
+require_relative 'vigenere'
 
 class SecretMessage
   def initialize(message_file)
